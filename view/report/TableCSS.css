@@ -1,0 +1,54 @@
+table.table {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+table.table th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+table.table td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
+
+@media print
+{
+    table.table     { page-break-after: auto; }
+    table.table   tr    { page-break-inside:avoid;page-break-after: auto; }
+    table.table   td    { page-break-inside:avoid; page-break-after:auto }
+    table.table   thead { display:table-header-group }
+    table.table   tfoot { display:table-footer-group }
+}
+
+
+
+
+/*From TEST */
+.formCustomControl {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  outline: 0;
+  margin-bottom: 10px;
+  width: 480px;
+}
+ 
